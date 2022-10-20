@@ -1,0 +1,13 @@
+---
+title: "About awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
+---
+
+# This is Mohammad's awesome website
+
+this website is made in rmarkdown and other stuff.
+

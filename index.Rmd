@@ -1,0 +1,23 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is Mohammad's awesome website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+Here's some text I like on the internet. I use [google](https://www.google.com/)
+all the time to do data science. 
+
+This is my cat edgar, who likes to look out the window.
+![](images/edgar.jpeg)
+
+Here's the direct link to the about page:
+[about](about.html).
+
+I also made a bonus [other page](other.html)
+
