@@ -5,10 +5,14 @@ navbar:
   right:
     - text: "About"
       href: about.html
+    - text: "Resume"
+      href: resume.html
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:<mff2137@columbia.edu>
     - icon: fa-github fa-lg
-      href: http://github.com/<mofouda>/
+      href: https://github.com/mofouda
+    - icon: fa-brands fa-linkedin
+      href: https://www.linkedin.com/in/mohammad-fouda-dvm-6b785b23/
 output:
   html_document:
     theme: cosmo

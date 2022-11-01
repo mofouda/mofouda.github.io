@@ -1,0 +1,82 @@
+---
+title: "Academic and Professional Experience"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
+---
+
+This page shows my academic and professional experience
+
+
+### **EDUCATION**
+
+MPH candidate, 2023, Columbia University Mailman School of Public Health		
+DVM, 2004, Cairo University College of Veterinary Medicine					
+
+
+### **AFFILIATIONS**
+
+US Department of State Scholar                                                 
+
+
+### **PROFESSIONAL EXPERIENCE**
+
+* Research Intern, EcoHealth Alliance, New York, 2022
+
+* Public Health Advisor/Contact Tracer, NYC Health + Hospitals, New York 2020-2021			
+ 					      
+* Public Health Advisor/Epi Surveillance Cluster Investigator, NYC Department of Health and Mental Hygiene, New York, 2021
+			
+* Veterinarian Intern, Williamsburg Animal Clinic, New York, 2019-2020	
+
+* Program Officer, Human Rights Port, New York, 2017-2018	
+
+* Advocacy Field Representative, Amnesty International USA, New York, 2017
+
+* Campaigns Officer, National Community for Human Rights & Law, Cairo, Egypt, 2013-2014		                                       
+
+* Product Manager, United Biomed/MEVAC Animal Health, Cairo, Egypt 2011-2013	
+
+* Medical Representative, Intermedicavet Animal Health, Cairo, Egypt, 2008-2010
+
+* Veterinarian, Dairy/Livestock Animal Farms, Egypt, 2004-2008
+
+
+### **TRAINING**
+
+* Marketing Diploma, 2011, Waukesha County Technical College (WCTC)
+
+* Military Academy, 2005-2006
+
+* Food Hygiene Postbaccalaureate Diploma, 2008, Zagazig University
+
+ 
+### **CERTIFICATION**
+
+* COVID-19 Contact Tracing by Johns Hopkins
+
+* HIPAA Awareness for Business Associates by HIPAA Training.com
+
+* Global Leadership Development Program by Fulbright, and Community Colleges for International Develop-ment (CCID) and Waukesha County Technical College (WCTC)
+ 
+### **SOFTWARE PROFICIENCY**
+
+* R, SAS
+
+* QGIS, GeoDa
+
+* Maven
+ 
+### **LANGUAGES**
+
+* Arabic: Native Speaker
+
+* English: Fluent 
+
+* French: Basic
+
+
+
+
