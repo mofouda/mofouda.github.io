@@ -1,0 +1,88 @@
+---
+title: "NY NOAA Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(flexdashboard)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r, include=FALSE}
+data("ny_noaa")
+
+ny_noaa <-
+  ny_noaa %>% 
+  as_tibble(ny_noaa)
+
+ ny_weather <-
+  ny_noaa %>%
+    separate(date, sep = "-", into = c("year", "month", "day")) %>% 
+    mutate(
+        across(.col = (c("year", "month", "day")), as.integer),
+        snow = as.double(snow),
+        tmax = as.double(tmax),
+        tmin = as.double(tmin),
+        month = month.name[month],
+        tmax = tmax / 10,
+        tmin = tmin / 10
+        ) %>% 
+    select(id, year, month, snow, tmax, tmin) %>% 
+    filter(
+        id %in% c("USW00094728", "USC00301625", "USC00303319", "USC00308944", 
+                  "USC00304174","USC00309000", "USC00300343", "USC00304555",
+                  "USC00300055", "USC00306649", "USC00307035"),
+        year %in% c(2006:2010),
+        month %in% c("November", "December", "January", "February", "March", "April")) %>% 
+    drop_na()
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+ny_weather %>%
+    plot_ly(
+        x = ~tmax,
+        y = ~tmin,
+        color = ~year,
+        type = "scatter",
+        mode = "markers",
+        alpha = .7)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+ny_weather %>%
+    mutate(id = fct_reorder(id, tmax)) %>% 
+    plot_ly(
+        y = ~tmax,
+        color = ~id,
+        type = "box",
+        colors = "viridis")
+```
+
+### Chart C
+
+```{r}
+ny_weather %>%
+    count(id) %>% 
+    mutate(id = fct_reorder(id, n)) %>% 
+    plot_ly(
+        x = ~id,
+        y = ~n,
+        type = "bar")
+```
+
